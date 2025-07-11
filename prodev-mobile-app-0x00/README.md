@@ -1,88 +1,50 @@
-# 📱 Mobile Development Environment Setup
+# Welcome to your Expo app 👋
 
-## 🎯 Objective
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-Set up and test a mobile development environment using **React Native**, **TypeScript**, **NativeWindCSS**, and the **Expo Framework**. This setup ensures efficient, cross-platform development with real-device testing using Expo Go.
+## Get started
 
----
+1. Install dependencies
 
-## 🛠️ Tools Required
+   ```bash
+   npm install
+   ```
 
-| Tool        | Purpose                          |
-|-------------|----------------------------------|
-| Node.js     | JavaScript runtime               |
-| VS Code     | Recommended code editor          |
-| Expo CLI    | Manage and run React Native apps |
-| Expo Go     | Test apps on physical device     |
-| Mobile OS   | Android or iOS                   |
+2. Start the app
 
----
+   ```bash
+   npx expo start
+   ```
 
-## 🔧 Setup Steps
+In the output, you'll find options to open the app in a
 
-### ✅ 1. Install Node.js and VS Code
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-- [Download Node.js LTS](https://nodejs.org/)
-- [Download VS Code](https://code.visualstudio.com/)
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-### ✅ 2. Install Expo CLI
+## Get a fresh project
 
-```bash
-npm install -g expo-cli
-```
-
-### ✅ 3. Create a New Expo App with TypeScript
+When you're ready, run:
 
 ```bash
-npx create-expo-app test-app --template expo-template-blank-typescript
-cd test-app
+npm run reset-project
 ```
 
-### ✅ 4. Start the Development Server
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-```bash
-npx expo start
-```
+## Learn more
 
-- This opens Expo Dev Tools and displays a QR code.
+To learn more about developing your project with Expo, look at the following resources:
 
-### ✅ 5. Install Expo Go on Your Device
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-- Go to [https://expo.dev/go](https://expo.dev/go)
-- Download Expo Go from:
-  - **Google Play Store** (Android)
-  - **Apple App Store** (iOS)
-- Open Expo Go and **log in** or **create an account**
+## Join the community
 
-### ✅ 6. Test the App on Your Device
+Join our community of developers creating universal apps.
 
-- Open **Expo Go**
-- Scan the QR code from the terminal or browser
-- The test app should open on your mobile device
-
----
-
-## ✅ Results
-
-- Environment is set up correctly.
-- App loads and runs successfully on a physical Android device.
-- Ready for further development with NativeWindCSS and additional screens.
-
----
-
-## ⚠️ Challenges Faced
-
-- None. Setup completed successfully without any issues.
-
----
-
-## 📌 Next Steps
-
-- Configure NativeWindCSS
-- Set up project structure for screen components
-- Implement UI from mockups
-- Start building features
-
----
-
-> 💡 Expo Go simplifies real-device testing and helps skip emulator setup, making it ideal for mobile development using React Native.
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
