@@ -1,50 +1,91 @@
-# Welcome to your Expo app 👋
+````markdown
+# First Mobile App - Setup Documentation
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Objective
+Document the process of setting up a React Native mobile app using the Expo Router template and record what happens when the project is reset using the reset command.
 
-## Get started
+---
 
-1. Install dependencies
+## 📁 Steps Followed for Scaffolding
 
-   ```bash
-   npm install
-   ```
+### 1. Navigate to the Project Directory
+```bash
+cd prodev-mobile-setup
+````
 
-2. Start the app
+### 2. Create a New Expo Project with Expo Router Template
 
-   ```bash
-   npx expo start
-   ```
+```bash
+npx create-expo-app@latest .
+```
 
-In the output, you'll find options to open the app in a
+* Chose the **Expo Router** template when prompted by the CLI.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 3. Modify the Home Screen
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* Opened: `app/(tabs)/index.tsx`
+* Updated text from:
 
-## Get a fresh project
+  ```tsx
+  <Text className="text-2xl font-bold">Welcome!</Text>
+  ```
 
-When you're ready, run:
+  to:
+
+  ```tsx
+  <Text className="text-2xl font-bold">** First App Created**</Text>
+  ```
+
+### 4. Start the Application
+
+```bash
+npx expo start
+```
+
+* Scanned the QR code:
+
+  * **iOS**: using the Camera app
+  * **Android**: using the Expo Go app
+
+---
+
+## 🔄 Observations from `npm run reset-project`
+
+### Command Run:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Observed Behavior:
 
-## Learn more
+* The Metro bundler cache and any previously built JavaScript bundles were cleared.
+* The development server stopped and restarted cleanly.
+* Any lingering or corrupted builds were removed.
+* Useful for fixing odd build behaviors or component updates not reflecting properly.
+* Ensured a fresh development state without deleting the source code.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Summary
 
-## Join the community
+The setup process for the first mobile app using Expo Router was completed successfully. The app was scaffolded, modified, and tested on real devices. The `reset-project` command was confirmed to be a powerful tool for clearing state and ensuring a clean slate during development.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Repository Details
+
+* **Repository:** prodev-mobile-setup
+* **Directory:** `prodev-mobile-app-0x00`
+* **Key Files:**
+
+  * `README.md`
+  * `app-example/app/(tabs)/index.tsx`
+  * `app-example/constants/Colors.tsx`
+
+---
+
+🚀 First app successfully scaffolded and tested!
+
+```
+```
